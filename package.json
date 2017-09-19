@@ -1,0 +1,36 @@
+{
+  "name": "mv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p",
+    "start": "serve ./public",
+    "test": "ava",
+    "watch": "webpack-dev-server",
+    "watch:test": "ava -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.1.1",
+    "mathjs": "^3.16.3",
+    "serve": "^6.2.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.87.1"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  }
+}

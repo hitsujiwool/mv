@@ -1,0 +1,5 @@
+world = floor, [ sep, floor ]
+floor = row, [ "\n", row ]
+row = token, [ token ]
+token = "-" | "x" | "t"
+sep = { " " |  "\n" }, "\n"
